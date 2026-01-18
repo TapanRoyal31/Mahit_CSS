@@ -1,0 +1,21 @@
+Web Development:-
+
+Frontend / Backend
+
+Frontend:- HTML
+
+
+
+CSS :
+--------------------------------------------------------------
+3 ways to write css in html file
+
+
+1)Inline CSS : style="" (Attribute)
+2)Internal CSS : <style></style> (style tag)
+3)External CSS : link (css file link)
+
+
+
+
+
