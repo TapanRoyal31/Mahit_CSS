@@ -1,0 +1,29 @@
+/* descendant selector(space) */
+/* .container p{
+    color: yellow; 
+} */
+
+/*child selector >*/
+/* .container > p{
+    color: yellow;
+} */
+
+/*sibling selector ~*/
+/* .container ~ p{
+    color: yellow;
+} */
+
+/*next sibling selector +/
+/* .container + p{
+    color: yellow;
+} */
+
+/* group selector , */
+/* .container,p{
+    color: yellow;
+} */
+
+/* Universal selector */
+*{
+    color: aliceblue;
+}

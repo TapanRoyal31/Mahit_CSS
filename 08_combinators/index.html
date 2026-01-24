@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+</head>
+<link rel="stylesheet" href="selector.css">
+<style>
+    body{
+        background: #212121;
+        color: aliceblue;
+    }
+    .container{
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>text paragraph #1</p>
+        <p target="_blank">text paragraph #2</p>
+        <div>
+            <p>text paragraph #3</p>
+        </div>
+    </div>
+
+    <p>text paragraph #4</p>
+    <p title="attribute">text paragraph #5</p>
+    <!-- <h2>hello</h2> -->
+</body>
+
+</html>
+
+<!-- 
+p[target="_blank"]
+{
+
+}
+
+// attribute,child,element -->
