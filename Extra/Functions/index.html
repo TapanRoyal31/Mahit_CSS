@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions and variables</title>
+</head>
+<style>
+    /*
+        var() :- to use variables in css
+        calc() :- perform arithmatic operations
+        min() :- find the minimum value and apply in css
+        max() :- find the maximum value and apply in css
+
+    */
+    :root{
+        --bgcolor : #212121;
+        --color : red;
+        --fontsize : 24px;
+        --animation : rotate 2s infinite ease;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: var(--bgcolor);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid yellow;
+        color: var(--color);
+        font-size: max(var(--fontsize), 12px);
+        animation: var(--animation);
+    }
+
+    @keyframes rotate {
+        from{
+            rotate: 0deg;
+        }
+        to{
+            rotate: 360deg;
+        }
+    }
+</style>
+<body>
+    <div class="box">
+        CSS Variables and functions
+    </div>
+</body>
+</html>
