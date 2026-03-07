@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediaQuery</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #212121;
+    }
+
+    /* grid container */
+.container {
+    height: 300px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'header header'
+        'main-content main-content'
+        'left-sidebar right-sidebar'
+        'footer footer';
+}
+
+/* general column padding */
+.container > * {
+    padding:1rem;
+}
+
+/* assign columns to grid areas */
+.container > .header {
+    grid-area:header;
+    background:#f97171;
+}
+.container > .main {
+    grid-area:main-content;
+    background:#fff;
+}
+.container > .left {
+    grid-area:left-sidebar;
+    background:#f5d55f;
+}
+.container > .right {
+    grid-area:right-sidebar;
+    background:#c5ed77;
+}
+.container > .footer {
+    grid-area:footer;
+    background:#72c2f1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'main-content'
+            'left-sidebar'
+            'right-sidebar'
+            'footer';
+    }
+}
+
+  </style>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="main"></div>
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
