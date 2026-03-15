@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /*
+    ::before
+    ::after
+    ::first-line
+    ::first-letter
+    :first-child
+    :last-child
+    :nth-child(n)
+    */
+
+    body{
+      background-color: #212121;
+      color: white;
+      height: 97vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+     .button{
+      position: relative;
+     }
+
+     /*
+    :first-child
+    :last-child
+    :nth-child(n)
+     */
+
+     /* .list li:nth-child(n){
+      background-color: blue;
+     } */
+
+     /*
+    ::first-line
+    ::first-letter
+     */
+     /* p::first-letter{
+    } */
+    /* p::first-letter{
+      
+      font-size: xx-large;
+      color: blue;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     } */
+
+  </style>
+  <body>
+    <ul class="list">
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <li>Fourth</li>
+    </ul>
+    <p>
+      This is a paragraph that is long enough to show a first line and first
+      letter style.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore quasi fuga nulla ullam dignissimos tempora quaerat nisi fugit exercitationem?
+    </p>
+    <!-- <div class="button">Save</div> -->
+    <!-- <div class="card">Order placed</div> -->
+  </body>
+</html>
